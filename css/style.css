@@ -1,0 +1,102 @@
+/* body{
+
+    background-color: rgb(215,200,115,0.5);
+    border:  2px black solid;
+    ;
+} */
+
+/* détermine la couleur et la taille de police du H1 */
+
+h1{
+
+    color:pink;
+    font-size: 2em;
+}
+
+/* centre l'image  */
+figure{
+
+    text-align: center;
+    position: relative;
+    margin-bottom: 12rem;
+}
+
+/* détermine la hauteur et la largeur, dessine une bordure grise continue de 5px */
+img{
+    width: 7rem;
+    height: 7rem;
+    border: 5px solid grey;
+    position:absolute;
+    right: 10rem;
+    transition: width 2s, height 2s, border 2s, transform 2s;
+
+}
+
+/* L'image va tourner dans le sens des aiguilles d'une montre, s'agrandir et avoir une bordure discontinue noire */
+
+img:hover{
+
+    border: 4px dotted black;
+    width: 12.5rem;
+    height: 12.5rem;
+    transform: rotateZ(180deg);
+}
+
+/* couleur de fond sur la liste des liens */
+ol{
+    background-color: cornsilk;
+}
+
+/* permet de disposer les liens les uns à côté des autres */
+
+li{
+    display: inline-block;
+    margin: 2rem;
+}
+
+/* ajoute une marge à gauche et à droite des paragraphes */
+
+p{
+    margin-left:5rem;
+    margin-right:5rem;
+}
+
+/* couleur de fond changé pour tous les paragraphes en position pair par rapport à leur voisin*/
+p:nth-child(odd){
+
+background-color: paleturquoise;
+}
+
+/* couleur de fond changé pour tous les paragraphes en position impair par rapport à leur voisin */
+p:nth-child(even){
+
+    background-color: blue;
+    }
+    
+
+/* change la couleur des liens et le background */
+
+a:hover{
+
+    color:white;
+    background-color: blue;
+}
+
+/* la nav sera visible même en scrollant */
+
+nav{
+    position: fixed;   
+    top: 40rem;
+    left: 50rem;
+    bottom: 30rem;
+}
+
+/* couleur de fond sur la section 1 */
+
+#first-section{
+
+    background-color: rgba(0,0,0, 0.3);
+}
+
+
+
