@@ -1,102 +1,186 @@
-/* body{
+body, html{
 
-    background-color: rgb(215,200,115,0.5);
-    border:  2px black solid;
-    ;
-} */
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
 
-/* détermine la couleur et la taille de police du H1 */
-
-h1{
-
-    color:pink;
-    font-size: 2em;
 }
 
-/* centre l'image  */
-figure{
+
+/* HEADER */
+
+#header{
+
+    height: 1000px;
+    width: 100%;
+    background-image: url('https://cdn.shopify.com/s/files/1/0024/8483/0255/files/HPfellowDESKTOP_2000x.jpg?v=1642867407');
+    background-size: cover;
+}
+
+nav {
+
+    width:100vw;
+    height:auto;
+    position:relative;
+    margin:25px 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+ul, li {
+
+    list-style-type:none;
+    display: inline-block;
+  }
+
+li {
+
+    width:auto;
+    margin:0 25px;
+}
+
+.header-p{
+
+    margin-left: 50rem;
+}
+
+#header li, button, .description-header,.section-1-div h2, .section-1-p,#section2 p, #section2 h2{
+
+    text-transform: uppercase;
+    
+}
+
+.article-nav{
+
+    margin:auto;
+    
+}
+
+.article-nav li{
+    color: white;
+}
+
+.banner{
+
+    background-color: white;
+    position: fixed;
+    margin-top: 0;
+}
+
+.nav-menu ul{
+    
+    margin-top: 5rem;
+}
+
+.nav-menu a {
+
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.description-header{
+
+    position:absolute;
+    top: 40rem;
+    left:20rem;
+    color: white;
+    font-weight: bold;
+
+}
+
+button{
+
+    background-color: white;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    padding: 1rem 3rem 1rem;
+}
+
+/* SECTION 1 */
+
+.section-1-p{
 
     text-align: center;
-    position: relative;
-    margin-bottom: 12rem;
+    font-size: 2rem;
 }
 
-/* détermine la hauteur et la largeur, dessine une bordure grise continue de 5px */
-img{
-    width: 7rem;
-    height: 7rem;
-    border: 5px solid grey;
+.section-1-div{
+
+    margin-left: 30rem;
+    margin-right: 30rem;
+
+}
+
+#section1 h2{
+
+    text-align: center;
+    font-size: 2rem;
+    color: #d2162f;
+}
+
+.image-1{
+
+    height: 19rem;
+    width: 17rem;
+}
+
+.image-2{
+
+    height: 25em; 
+    width: 22rem;
+}
+
+.image-3{
+
+    height: 19rem;
+    width: 17em; 
+
+} 
+
+.image-4{
+
+    height: 18rem;
+    width: 21rem; 
+
+}
+
+/* SECTION 2 */
+
+#section2{
+
+    background-image: url(../img/fond-noir.jpg);
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+}
+
+#section2 h2{
+
     position:absolute;
-    right: 10rem;
-    transition: width 2s, height 2s, border 2s, transform 2s;
+    top: 120rem;
+    left:20rem;
+    font-weight: bold;
+    color: white;
 
 }
 
-/* L'image va tourner dans le sens des aiguilles d'une montre, s'agrandir et avoir une bordure discontinue noire */
+#section2 p{
+    position:absolute;
+    top: 127rem;
+    left:20rem;
+    font-weight: bold;
+    color: white;
 
-img:hover{
-
-    border: 4px dotted black;
-    width: 12.5rem;
-    height: 12.5rem;
-    transform: rotateZ(180deg);
 }
 
-/* couleur de fond sur la liste des liens */
-ol{
-    background-color: cornsilk;
+#section2 button{
+
+    position:absolute;
+    top: 130rem;
+    left:20rem;
 }
-
-/* permet de disposer les liens les uns à côté des autres */
-
-li{
-    display: inline-block;
-    margin: 2rem;
-}
-
-/* ajoute une marge à gauche et à droite des paragraphes */
-
-p{
-    margin-left:5rem;
-    margin-right:5rem;
-}
-
-/* couleur de fond changé pour tous les paragraphes en position pair par rapport à leur voisin*/
-p:nth-child(odd){
-
-background-color: paleturquoise;
-}
-
-/* couleur de fond changé pour tous les paragraphes en position impair par rapport à leur voisin */
-p:nth-child(even){
-
-    background-color: blue;
-    }
-    
-
-/* change la couleur des liens et le background */
-
-a:hover{
-
-    color:white;
-    background-color: blue;
-}
-
-/* la nav sera visible même en scrollant */
-
-nav{
-    position: fixed;   
-    top: 40rem;
-    left: 50rem;
-    bottom: 30rem;
-}
-
-/* couleur de fond sur la section 1 */
-
-#first-section{
-
-    background-color: rgba(0,0,0, 0.3);
-}
-
-
-
